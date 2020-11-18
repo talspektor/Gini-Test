@@ -13,6 +13,12 @@
 		435FF9402565835500B43A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435FF93E2565835500B43A50 /* Main.storyboard */; };
 		435FF9422565835600B43A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435FF9412565835600B43A50 /* Assets.xcassets */; };
 		435FF9452565835600B43A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435FF9432565835600B43A50 /* LaunchScreen.storyboard */; };
+		435FF957256585F500B43A50 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FF955256585F500B43A50 /* MyCollectionViewCell.swift */; };
+		435FF958256585F500B43A50 /* ZeroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435FF956256585F500B43A50 /* ZeroCollectionViewCell.xib */; };
+		435FF96425658BAD00B43A50 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FF96325658BAD00B43A50 /* Numbers.swift */; };
+		435FF96825658EC300B43A50 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FF96725658EC300B43A50 /* ViewModel.swift */; };
+		435FF9722565A17C00B43A50 /* CellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FF9712565A17C00B43A50 /* CellConfig.swift */; };
+		435FF9802565ABFA00B43A50 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435FF97F2565ABFA00B43A50 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		435FF9412565835600B43A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435FF9442565835600B43A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		435FF9462565835600B43A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435FF955256585F500B43A50 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		435FF956256585F500B43A50 /* ZeroCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZeroCollectionViewCell.xib; sourceTree = "<group>"; };
+		435FF96325658BAD00B43A50 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		435FF96725658EC300B43A50 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		435FF9712565A17C00B43A50 /* CellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfig.swift; sourceTree = "<group>"; };
+		435FF97F2565ABFA00B43A50 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		435FF9372565835500B43A50 /* Gini-Test */ = {
 			isa = PBXGroup;
 			children = (
-				435FF9382565835500B43A50 /* AppDelegate.swift */,
-				435FF93A2565835500B43A50 /* SceneDelegate.swift */,
-				435FF93C2565835500B43A50 /* ViewController.swift */,
-				435FF93E2565835500B43A50 /* Main.storyboard */,
+				435FF97E2565ABC500B43A50 /* Network */,
+				435FF9772565A6A800B43A50 /* SupportFiles */,
+				435FF9762565A69200B43A50 /* StoryBoards */,
+				435FF9752565A67500B43A50 /* ViewControllers */,
+				435FF96625658EB200B43A50 /* ViewModel */,
+				435FF96225658B8600B43A50 /* Model */,
+				435FF94D2565849500B43A50 /* Cells */,
 				435FF9412565835600B43A50 /* Assets.xcassets */,
-				435FF9432565835600B43A50 /* LaunchScreen.storyboard */,
 				435FF9462565835600B43A50 /* Info.plist */,
 			);
 			path = "Gini-Test";
+			sourceTree = "<group>";
+		};
+		435FF94D2565849500B43A50 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				435FF955256585F500B43A50 /* MyCollectionViewCell.swift */,
+				435FF956256585F500B43A50 /* ZeroCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		435FF96225658B8600B43A50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				435FF96325658BAD00B43A50 /* Numbers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		435FF96625658EB200B43A50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				435FF9712565A17C00B43A50 /* CellConfig.swift */,
+				435FF96725658EC300B43A50 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		435FF9752565A67500B43A50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				435FF93C2565835500B43A50 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		435FF9762565A69200B43A50 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				435FF93E2565835500B43A50 /* Main.storyboard */,
+				435FF9432565835600B43A50 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		435FF9772565A6A800B43A50 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				435FF9382565835500B43A50 /* AppDelegate.swift */,
+				435FF93A2565835500B43A50 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		435FF97E2565ABC500B43A50 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				435FF97F2565ABFA00B43A50 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +200,7 @@
 			files = (
 				435FF9452565835600B43A50 /* LaunchScreen.storyboard in Resources */,
 				435FF9422565835600B43A50 /* Assets.xcassets in Resources */,
+				435FF958256585F500B43A50 /* ZeroCollectionViewCell.xib in Resources */,
 				435FF9402565835500B43A50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +214,12 @@
 			files = (
 				435FF93D2565835500B43A50 /* ViewController.swift in Sources */,
 				435FF9392565835500B43A50 /* AppDelegate.swift in Sources */,
+				435FF96425658BAD00B43A50 /* Numbers.swift in Sources */,
+				435FF957256585F500B43A50 /* MyCollectionViewCell.swift in Sources */,
+				435FF9802565ABFA00B43A50 /* NetworkManager.swift in Sources */,
 				435FF93B2565835500B43A50 /* SceneDelegate.swift in Sources */,
+				435FF96825658EC300B43A50 /* ViewModel.swift in Sources */,
+				435FF9722565A17C00B43A50 /* CellConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Gini-Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Gini-Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
