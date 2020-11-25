@@ -17,7 +17,11 @@ class ViewController: UIViewController {
         
         registercell()
         viewModel = ViewModel()
-        viewModel.fetchNumbers()
+        viewModel.fetchNumbers { [weak self] in
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
+        }
     }
     
     private func registercell() {

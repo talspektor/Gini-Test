@@ -11,10 +11,11 @@ class ViewModel {
 
     var numbers: Numbers?
     
-    func fetchNumbers() {
+    func fetchNumbers(completion: @escaping () -> Void) {
         let manager = NetworkManager.shared
         manager.fetchNumbers { numbers in
             self.numbers = numbers
+            completion()
         }
     }
     
